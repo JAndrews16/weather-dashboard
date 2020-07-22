@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Weather</title>
+    <link rel="icon" href="./Assets/Images/sun.png" type="image/png">
+
+    <!--Link to Bootstrap, Google Fonts and Stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 banner">Weather Around the World</h1>
+          <p class="lead banner">Use the search bar to check the weather in any city!</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4">
+          <div class="search-bar">
+            <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="search-input form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <br><br>
+              <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="./Assets/Images/find.png" alt="Search" height="30px" width="30px"></button>
+            </form>
+            </nav>
+            <div>
+              <h4 id="recentSearch">Recently Seached:</h4>
+            </div>
+          <div id="city-buttons"></div> 
+          </div>
+        </div>
+
+      <div class="col-lg-9 col-md-9 col-sm-8">
+        <div class="main-dash">
+          <h2 class="city-name"></h2>
+          <p class="info temp"></p>
+          <p class="info humidity"></p>
+          <p class="info wind"></p>
+          <p class="info uvIndex">UV Index: <span id="uvIndexSpan"></p>
+
+          <h3 class="forecast-text">5-Day Forecast:</h3>
+          <div class="card">
+              <h5 id="date0" class="card-title"></h5>
+              <img class="weather-icon0" src="">
+              <p id="temp0" class="card-text"></p>
+              <p id="humidity0" class="card-text"></p>
+          </div> 
+
+          <div class="card">
+            <h5 id="date1" class="card-title"></h5>
+            <img class="weather-icon1" src="">
+            <p id="temp1" class="card-text"></p>
+            <p id="humidity1" class="card-text"></p>
+        </div> 
+
+        <div class="card">
+          <h5 id="date2" class="card-title"></h5>
+          <img class="weather-icon2" src="">
+          <p id="temp2" class="card-text"></p>
+          <p id="humidity2" class="card-text"></p>
+      </div> 
+
+      <div class="card">
+        <h5 id="date3" class="card-title"></h5>
+        <img class="weather-icon3" src="">
+        <p id="temp3" class="card-text"></p>
+        <p id="humidity3" class="card-text"></p>
+    </div> 
+
+      <div class="card">
+        <h5 id="date4" class="card-title"></h5>
+        <img class="weather-icon4" src="">
+        <p id="temp4" class="card-text"></p>
+        <p id="humidity4" class="card-text"></p>
+    </div> 
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <footer>
+          Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and <a href="https://www.flaticon.com/free-icon/search-location_3203073?term=search&page=1&position=44" title="fjstudio">fjstudio</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>

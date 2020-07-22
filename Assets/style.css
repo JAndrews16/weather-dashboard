@@ -1,0 +1,106 @@
+body {
+  background-image: url(./Images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    font-size: 7px;
+    text-align: left;
+    padding-top: 90px;
+    position: absolute;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .jumbotron {
+    padding: 10px;
+    background-color: rgb(22, 27, 73);
+    color: rgb(236, 236, 236);
+  }
+
+  .banner {
+    text-align: center;
+    padding: 20px;
+    border: 10px;
+  }
+
+  .search-bar {
+    background-color: rgb(195, 235, 235);
+    border: 3px solid rgb(59, 59, 59);
+    padding: 5px;
+    margin: 20px;
+    height: 500px;
+    float: left;
+  }
+
+  #search-button {
+    padding: 5px;
+    margin-left: 40%;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(95, 95, 95);
+  }
+
+  .main-dash {
+    opacity: 0;
+    background-color: rgb(195, 235, 235);
+    border: 5px solid rgb(59, 59, 59);
+    padding: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+  }
+
+  .info {
+    font-size: 20px;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .city-button {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    border: 1px solid rgb(158, 158, 158);
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .city-name {
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  .forecast-text {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+  }
+
+  .card {
+    text-align: center;
+    padding-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    border: 2px solid rgb(59, 59, 59);
+  }
+
+  #uvIndexSpan {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  #recentSearch {
+    padding: 10px;
+    margin-top: 15px;
+    text-align: left;
+  }
