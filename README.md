@@ -11,6 +11,6 @@ This applications functions using an openweathermap web API to find the weather 
 
 The following image demonstrates the application functionality:
 
-![weather dashboard homepage](./Assets/Images/homepage.png)
+![weather dashboard homepage](./Assets/Images/homepage.PNG)
 
-![weather dashboard demo](./Assets/Images/weather.png)
+![weather dashboard demo](./Assets/Images/weather.PNG)
