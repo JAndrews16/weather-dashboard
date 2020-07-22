@@ -1,6 +1,6 @@
+$(document).ready(function(){
 
 let today = moment().format("MMM Do YY"); 
-let storedButtons = 0;
 let city;
 var main = $(".main-dash");
 
@@ -95,4 +95,6 @@ $(".city-button").on("click", function(event){
     city = $(this).attr("id");
     
     findWeather();
+});
+
 });
