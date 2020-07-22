@@ -78,20 +78,25 @@ function findWeather() {
 $("#search-button").on("click", function(event){
     city = $(".search-input").val();
 
-    localStorage.setItem("city", city);
+    if(city === "") {
+        event.preventDefault();
+        alert("Please enter a city to view the weather.");
+    } else {
+        localStorage.setItem("city", city);
 
-    let newBtn = $('<button>');
+        let newBtn = $('<button>');
 
-    newBtn.attr("id", city);
-    newBtn.addClass("city-button");
-    newBtn.text(city);
+        newBtn.attr("id", city);
+        newBtn.addClass("city-button");
+        newBtn.text(city);
 
-    $("#city-buttons").append(newBtn);
+        $("#city-buttons").append(newBtn);
 
-    findWeather();
+        findWeather();
+    }
 });
 
-$(".city-button").on("click", function(event){
+$("body").on("click", ".city-button", function(event){
     city = $(this).attr("id");
     
     findWeather();
